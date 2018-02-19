@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script> -->
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary btn-clickable" data-value="1">1</button>
+					<button type="button" class="btn btn-primary btn-clickable" data-value="2">2</button>
+					<button type="button" class="btn btn-primary btn-clickable" data-value="3">3</button>
+					<button type="button" class="btn btn-primary btn-clickable" data-value="4">4</button>
+					<button type="button" class="btn btn-primary btn-clickable" data-value="5">5</button>
+					<button type="button" class="btn btn-primary btn-clickable" data-value="6">6</button>
+					<button type="button" class="btn btn-primary btn-clickable" data-value="7">7</button>
+					<button type="button" class="btn btn-primary btn-clickable" data-value="8">8</button>
+					<button type="button" class="btn btn-primary btn-clickable" data-value="9">9</button>
+					<button type="button" class="btn btn-primary btn-clickable" data-value="10">10</button>
+					<button type="button" class="btn btn-primary btn-clickable" data-value="11">11</button>
+					<button type="button" class="btn btn-primary btn-clickable" data-value="12">12</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<ul id="order-panel" class="list-unstyled"></ul>
+				<button type="submit" class="btn btn-default btn-order-post">Save and post</button>
+			</div>
+			<div class="col-md-4">
+				<ul class="list-unstyled inline-block">
+					<li class="draggable" data-value="900 H"><button type="button" class="btn btn-default">900 H</button></li>
+					<li class="draggable" data-value="901 H"><button type="button" class="btn btn-default">901 H</button></li>
+					<li class="draggable" data-value="902 H"><button type="button" class="btn btn-default">902 H</button></li>
+					<li class="draggable" data-value="903 H"><button type="button" class="btn btn-default">903 H</button></li>
+					<li class="draggable" data-value="904 H"><button type="button" class="btn btn-default">904 H</button></li>
+					<li class="draggable" data-value="905 H"><button type="button" class="btn btn-default">905 H</button></li>
+					<li class="draggable" data-value="906 H"><button type="button" class="btn btn-default">906 H</button></li>
+					<li class="draggable" data-value="907 H"><button type="button" class="btn btn-default">907 H</button></li>
+				</ul>
+				<ul class="list-unstyled inline-block">
+					<li class="draggable" data-value="900 L"><button type="button" class="btn btn-default">900 L</button></li>
+					<li class="draggable" data-value="901 L"><button type="button" class="btn btn-default">901 L</button></li>
+					<li class="draggable" data-value="902 L"><button type="button" class="btn btn-default">902 L</button></li>
+					<li class="draggable" data-value="903 L"><button type="button" class="btn btn-default">903 L</button></li>
+					<li class="draggable" data-value="904 L"><button type="button" class="btn btn-default">904 L</button></li>
+					<li class="draggable" data-value="905 L"><button type="button" class="btn btn-default">905 L</button></li>
+					<li class="draggable" data-value="906 L"><button type="button" class="btn btn-default">906 L</button></li>
+					<li class="draggable" data-value="907 L"><button type="button" class="btn btn-default">907 L</button></li>
+				</ul>
+				<ul class="list-unstyled inline-block">
+					<li class="draggable" data-value="Alarm"><button type="button" class="btn btn-default">Alarm</button></li>
+					<li class="draggable-select"><select class="btn btn-default"><option value="D 100">100</option><option value="D 200">200</option><option value="D 300">300</option><option value="D 400">400</option></select></li>
+					<li class="draggable" data-value="Function 1"><button type="button" class="btn btn-default">Function 1</button></li>
+					<li class="draggable" data-value="Function 2"><button type="button" class="btn btn-default">Function 2</button></li>
+					<li class="draggable" data-value="Function 3"><button type="button" class="btn btn-default">Function 3</button></li>
+				</ul>
+			</div>
+			<div class="col-md-4 preview">
+				<code></code>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
